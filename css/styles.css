@@ -485,6 +485,9 @@ footer{
 }
 
 /* --------/CONTACT/--------- */
+.h1-repair h1{
+    margin-bottom: 0px;
+}
 .hero-form{
     /* background-color: #e0defd; */
     padding: 5px;
@@ -769,4 +772,23 @@ footer{
         height: 30vh;
         width: 30vh;
     }
+}
+
+/* PSEUDO ELEMENTOS */
+
+/*! nav */
+.navigation ul li a:hover{
+    background: rgb(46, 46, 46);
+    color: white;
+    border-radius: 5px;
+}
+
+/*! index */
+
+.new-collection-container h2:hover{
+    color: #e0defd;
+}
+.product-container-text-link:hover{
+    background-color:rgb(46, 46, 46) ;
+    color: white;
 }
