@@ -1,0 +1,56 @@
+footer{
+    @include color-principal-gradiente-inferior;
+    .footer-section{
+        @include flex-mode-selection(flex, flex-end, center, row, none);
+        margin-top: 20px;
+        padding-top: 20px;
+        div{
+            width: 100%;
+            @include flex-mode-selection(flex, flex-start, center, row, none);
+            h2{
+                font-family:"Rubik Mono One", monospace; 
+                font-style: normal;
+                width: 150px;
+                font-size: 40px;
+                margin-right: 10px;
+                margin-left: 25px;
+                text-wrap: wrap;
+                text-align: left;
+                color: black;
+            }
+        }
+        .footer-logo-container{
+            div{
+                @include flex-mode-selection(flex, flex-end, center, row, none);
+                p{
+                    margin-right: 15px;
+                    width: 100px;
+                    text-align: right;
+                    text-wrap: wrap;
+                    font-size: 20px;
+                }
+                img{
+                    opacity: 90%;
+                    width:100px;
+                    height: 115px;
+                    object-fit: fill;   
+                    border-radius: 5px;
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+    .footer-reserved-rights{
+        @include flex-mode-selection(flex, center, center, row, none);
+        div{
+            margin-bottom: 10px;
+            p{
+                margin-right: 15px;
+                width: 100px;
+                text-align: right;
+                text-wrap: wrap;
+                font-size: 10px;
+            }
+        }
+    }
+}

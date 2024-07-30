@@ -1,0 +1,148 @@
+.hero {
+    @include flex-mode-selection(flex, center, center, row, none);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 80vh;
+    background-image: url(../img/new_collection_5_colorized.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: nth($colores, 1);
+
+    .new-collection-container {
+        @include flex-mode-selection(block, center, center, none, none);
+
+        a {
+            text-decoration: none;
+
+            h2 {
+                text-align: center;
+                font-size: 8vw;
+                color: white;
+                font-style: italic;
+                @extend %general-anim-transition-config;
+                &:hover {
+                    color: #c4c0ff;
+                }
+            }
+        }
+    }
+}
+
+.products-selection {
+    @include flex-orientation(center, center, row);
+    margin: 10px;
+
+    h2 {
+        text-align: center;
+        font-style: normal;
+        margin-top: 25px;
+        color: nth($colores, 2);
+    }
+
+    p {
+        text-align: center;
+        margin: 5px;
+        font-size: 17px;
+    }
+
+}
+
+.product-containers {
+    @include flex-mode-selection(flex, center, flex-start, row, wrap);
+    margin: 10px;
+
+    div {
+        @include flex-mode-selection(flex, center, center, column, none);
+        margin: 20px;
+        border-radius: 15px;
+
+        a {
+            background-color: white;
+        }
+
+        div {
+            .product-container-text-link {
+                @extend %button;
+            }
+        }
+    }
+}
+
+.main-product-card {
+    a {
+        img {
+            width: 40vh;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 15px;
+            opacity: 90%;
+            @extend %general-anim-transition-config;
+
+            &:hover {
+                @include image-animation();
+                @include image-animation-shadow();
+            }
+        }
+    }
+}
+
+.secondary-products-img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 90%;
+    @extend %general-anim-transition-config;
+
+    &:hover {
+        @include image-animation();
+        @include image-animation-shadow();
+    }
+}
+
+.about-us-section {
+    .about-us-container {
+        @include flex-mode-selection(flex, space-evenly, center, row, wrap);
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .founders-room-link {
+            width: 70%;
+            div {
+                a {
+                    img {
+                        height: 500px;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: 30% 20%;
+                        opacity: 90%;
+                        border-radius: 20px;
+                        @extend %general-anim-transition-config;
+
+                        &:hover {
+                            @include image-animation();
+                            @include image-animation-shadow();
+                        }
+                    }
+                }
+            }
+        }
+        .founders-room-text {
+            width: 31%;
+            margin-top: 15px;
+            div {
+                @include flex-mode-selection(flex, center, center, row, none);
+                div {
+                    h2 {
+                        color: black;
+                        word-wrap: break-word;
+                        font-size: 5.5vh;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

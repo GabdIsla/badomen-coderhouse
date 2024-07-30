@@ -1,0 +1,77 @@
+.collection-hero_title {
+    margin-top: 25px;
+
+    div {
+        width: 70%;
+    }
+
+    .collection-hero_title_container {
+        width: 80%;
+
+        div {
+            @include flex-mode-selection(flex, center, center, row, none);
+
+            div {
+                @include flex-mode-selection(flex, flex-start, center, row, none);
+
+                h2 {
+                    color: black;
+                    text-align: left;
+                }
+            }
+        }
+
+        div {
+            div {
+                p {
+                    font-size: 17px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.collection-hero-products {
+    margin-top: 60px;
+
+    .hero-grid-search-container {
+        margin: 20px;
+        display: grid;
+        gap: 20px 20px;
+        list-style: none;
+
+        .first-item {
+            grid-row-start: 1;
+            grid-row-end: 7;
+
+            @include flex-mode-selection(flex, center, none, row, none);
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .hero-list {
+            @include flex-mode-selection(flex, center, center, row, none);
+
+            a {
+                img {
+                    max-width: auto;
+                    max-height: auto;
+                    height: 40vh;
+                    width: 50vh;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 10px;
+                    box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.2);
+                    @extend %general-anim-transition-config;
+                        &:hover {
+                            @include image-animation();
+                            @include product-images-animation-shadow();
+                        }
+                }
+            }
+        }
+    }
+}

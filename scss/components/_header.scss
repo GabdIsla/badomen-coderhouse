@@ -1,0 +1,88 @@
+header{
+    // background-color: nth($colores, 1);
+    @include color-principal-gradiente-superior;
+    margin-bottom: 20px;
+    .header-section{
+        @include flex-mode-selection(flex, space-evenly, center, row, wrap);
+        div{
+            @include flex-mode-selection(flex, center, center, row, none);
+            width: 32%
+        }
+        .header-title-container{
+            @include flex-mode-selection(flex, flex-start, center, row, none);
+            margin-left: 10px;
+            div{
+                @include flex-mode-selection(flex, flex-start, center, row, none);
+                width: 90%;
+                h1{
+                    text-align: left;
+                    font-family:"Rubik Mono One", monospace;
+                    font-weight: 400;
+                    font-size: 10vh;  
+                    color: black;
+                }
+            }
+        }
+        .header-img-container{
+            @include flex-mode-selection(flex, center, center, row, none);
+            div{
+                width: 100%;
+                div{
+                    img{
+                        height: 200px;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: 40% 35%;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+        .rrss-container{
+            margin-right: 10px;
+            @include flex-mode-selection(flex, flex-end, center, row, none);
+            div{
+                width: 15%;
+                @include flex-mode-selection(flex, flex-end, center, column, none);
+                a{
+                    @include flex-mode-selection(flex, flex-end, center, row, none);
+                    img{
+                        border-radius: 50px;
+                        width: 50px; height: 50px; object-fit: contain;
+                        margin: 5px;
+                        @extend %general-anim-transition-config;
+                            &:hover{
+                                @include image-animation();
+                                @include product-images-animation-shadow();
+                            }
+                    }
+                }
+            }
+        }
+    }
+    
+    nav{
+        @include flex-mode-selection(flex, space-around, center, row, none);
+        background-color: nth($colores, 1);
+        .navigation{
+            text-align: center;
+            list-style: none;
+            background-color: nth($colores, 1);
+            padding-top: 5px;
+            ul{
+                @include flex-mode-selection(flex, space-evenly, center, row, wrap);
+                list-style-type: none;
+                margin-bottom: 15px;
+                padding: 0px;
+                li{
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                    a{
+                        @extend %button;
+                    }
+                }
+            }
+        }
+    }
+}
+

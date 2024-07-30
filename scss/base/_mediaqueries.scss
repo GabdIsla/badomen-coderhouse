@@ -1,0 +1,283 @@
+
+@media (max-width: 1920px) {
+    header .header-section .header-title-container div h1{
+        font-size: 90px; 
+        color: black;
+        text-align: left;
+    }
+    .collection-hero-products .hero-grid-search-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 1440px){
+    .collection-hero-products .hero-grid-search-container .hero-list a img{
+        height: 40vh;
+        width: 40vh;
+    }
+}
+@media (max-width: 1247px){
+    .collection-hero-products .hero-grid-search-container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 5px;
+    }
+    .collection-hero-products .hero-grid-search-container .first-item{
+        grid-row-end: 9;
+    }
+    .who-are-we-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .who-we-are-text{
+        margin-top: 25px;
+        width: 100%;
+    }
+    .who-are-we-container div img{
+        height: 70vh;
+        width: 70vh;
+    }
+    .who-are-we-container div{
+        width: 100%;
+    }
+}
+@media (max-width: 1220px){
+    header .header-section .header-title-container div h1{
+        font-size: 70px; 
+    }
+}
+@media (max-width: 1291px){
+    .product-containers{
+        flex-wrap: nowrap;
+        justify-content: none;
+    }
+    .product-containers div{
+        width: 100%;
+    }
+    .secondary-products-img{
+        width: 30vh;
+    }
+    .main-product-card img{
+        width: 40vh;
+    }
+}
+@media (max-width: 1075px){
+    .collection-hero-products .hero-grid-search-container .hero-list a img{
+        height: 35vh;
+        width: 35vh;
+    }
+}
+@media (max-width: 950px){
+    header .header-section .header-title-container div h1{
+        font-size: 60px; 
+    }
+    .collection-hero-products .hero-grid-search-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .collection-hero-products .hero-grid-search-container .first-item{
+        grid-row-end: auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+}
+@media(max-width: 942px){
+    .product-containers{
+        flex-wrap: wrap;
+        justify-content: none;
+    }
+    .main-product-card img{
+        width: 40vh;
+    }
+    .who-we-are-text p{
+        font-size: 20px;
+    }
+    .who-are-we-container div{
+        width: 100%;
+    }
+}
+@media (max-width: 816px){
+    .founders-room-text{
+        width: 80%;
+    }
+}
+@media (max-width: 763px){
+    header .header-section .header-title-container div h1{
+        font-size: 50px; 
+    }
+    .collection-hero-products .hero-grid-search-container{
+        grid-template-columns: 1fr;
+        
+    }
+    header .header-section .rrss-container div a img{
+        height: 40px;
+        width: 40px;
+    }
+    header nav .navigation ul li a{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 725px){
+    .collection-hero-products .hero-grid-search-container .first-item{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
+@media (max-width: 684px){
+    header .header-section{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .header-section div{
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    header .header-section .header-title-container{
+        justify-content: center;
+        margin-left: 0px;
+    }
+    header .header-section .header-title-container div{
+        margin-top: 10px;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    header .header-section .header-title-container div h1{
+        text-align: center;
+    }
+    header .header-section .header-img-container div div img{
+        object-fit: none;
+        height: 20vh;
+        width: 500px;
+        object-position: 50% 35%;
+    }
+    header .header-section .rrss-container{
+        margin-right: 0px;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    header .header-section .rrss-container div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .who-we-are-text p{
+        font-size: 15px;
+    }
+    .who-are-we-container div{
+        width: 100%;
+    }
+    .who-are-we-section h2{
+        font-size: 50px;
+        margin: 20px;
+    }
+    .collection-hero_title .collection-hero_title_container div div h2 {
+        font-size: 40px;
+    }
+    .collection-hero_title .collection-hero_title_container div div p {
+        font-size: 15px;
+    }
+}
+@media(max-width: 560px){
+    header .header-section .header-title-container div h1{
+        font-size: 30px;
+    }
+    header .header-section .header-img-container div div img{
+        object-fit: none;
+        width: 500px;
+        height: 15vh;
+        object-position: 50% 35%;
+    }
+}
+@media(max-width: 550px){
+    .hero form .hero-form-container{
+        width: 50vh;
+    }
+    .hero-login-form .hero-login-form-container{
+        width: 50vh;
+    }
+}
+@media(max-width: 502px){
+    .who-are-we-container div img{
+        height: 50vh;
+        width: 50vh;
+    }
+    .who-we-are-text p{
+        font-size: 12px;
+    }
+    .main-product-card img{
+        width: 30vh;
+    }
+}
+@media (max-width: 450px){
+    footer .footer-reserved-rights{
+        margin-top: 10px;
+    }
+    .who-are-we-section h2{
+        font-size: 40px;
+        margin: 20px;
+    }
+    .hero-form .hero-form-container{
+        width: 40vh;
+    }
+    .hero-login-form .hero-login-form-container{
+        width: 40vh;
+    }
+}
+@media (max-width: 422px){
+    footer .footer-section div{
+        justify-content: center;
+    }
+    footer .footer-container div h2{
+        font-size: 35px;
+
+    }
+    footer .footer-section .footer-logo-container div p{
+        margin-right: 5px;
+        font-size: 15px;
+    }
+    footer .footer-section .footer-logo-container div img{
+        width: 8vh;
+        height: 8vh;
+        // margin-right: 0px;
+    }
+    footer .footer-container div h2{
+        font-size: 25px;
+        
+    }
+    .who-are-we-container div img{
+        height: 40vh;
+        width: 40vh;
+    }
+}
+@media(max-width: 396px){
+    header .header-section .header-title-container div h1{
+        font-size: 30px;
+    }
+    .navigation ul{
+        display: flex;
+        justify-content:center;
+    }
+    footer .footer-section .footer-logo-container{
+        margin-right: 15px;
+    }
+    footer .footer-section .footer-logo-container div img{
+        margin-right: 0px;
+    }
+    .founders-room-text{
+        width: 95%;
+    }
+    footer .footer-section div{
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media (max-width: 380px){
+    .collection-hero-products .hero-grid-search-container .hero-list a img{
+        height: 30vh;
+        width: 30vh;
+    }
+}

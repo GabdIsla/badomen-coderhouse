@@ -1,0 +1,24 @@
+.hero-login-form{
+    @include flex-mode-selection(flex, center, center, none, none);
+    padding: 5px;
+    .hero-login-form-container{
+        width: 60vh;
+        margin: 25px;
+        padding: 50px;
+        background-color: nth($colores, 1);
+        border-radius: 15px;
+        form{
+            button{
+                background-color: rgb(56, 56, 56);
+                border-color: black;
+                color: white;
+                margin-top: 20px;
+                @extend %general-anim-transition-config;
+                    &:hover{
+                        background-color: rgb(6, 6, 6);
+                        color: white;
+                    }
+            }
+        }
+    }
+}
