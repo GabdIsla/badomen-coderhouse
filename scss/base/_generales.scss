@@ -32,7 +32,6 @@ a {
 
 body {
     font-family: "Raleway", sans-serif;
-    // font-optical-sizing: auto;
     font-weight: 900px;
     font-style: normal;
 
@@ -67,7 +66,8 @@ $colores: $color-principal,
     $color-terceario,
     $color-background;
 
-//! EXTENDS
+//! EXTEND DE BOTON
+
 %button {
     margin-top: 15px;
     margin: 20px;
@@ -121,24 +121,27 @@ $colores: $color-principal,
 
 //! ANIMATIONS
 
-// CONFIG GLOBAL
+// CONFIG GLOBAL DE TRANSICION
 %general-anim-transition-config {
     transition: all .4s 0s ease-in-out;
 }
 
-// IMAGENES
+// SCALE VALUE GENERAL
 $general-animation-scale-value: 1.02;
 
+// MIXIN PARA TRANSFORM SCALE
 @mixin image-animation() {
     transform: scale($general-animation-scale-value);
 }
 
+//MIXIN PARA SHADOW DE LA ANIMACION DE LAS IMAGENES
 @mixin image-animation-shadow() {
     box-shadow: -1px 5px 5px -7px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: -1px 1px 30px -7px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 1px 30px -7px rgba(0, 0, 0, 0.75);
 }
 
+//MIXIN PARA SHADOW DE LA ANIMACION PARA LAS IMAGENES DE LA PRODUCT PAGE
 @mixin product-images-animation-shadow() {
     box-shadow: -1px 5px 5px -7px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: -1px 1px 20px -7px rgba(0, 0, 0, 0.75);
