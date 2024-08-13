@@ -105,8 +105,7 @@
         font-size: 50px; 
     }
     .collection-hero-products .hero-grid-search-container{
-        grid-template-columns: 1fr;
-        
+        grid-template-columns: repeat(2, 1fr);
     }
     header .header-section .rrss-container div a img{
         height: 40px;
@@ -120,10 +119,17 @@
 @media (max-width: 725px){
     .collection-hero-products .hero-grid-search-container .first-item{
         grid-column-start: 1;
-        grid-column-end: 1;
+        grid-column-end: 3;
     }
 }
 @media (max-width: 684px){
+    .collection-hero-products .hero-grid-search-container{
+        grid-template-columns: 1fr;
+    }
+    .collection-hero-products .hero-grid-search-container .first-item{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
     header .header-section{
         width: 100%;
         justify-content: center;
