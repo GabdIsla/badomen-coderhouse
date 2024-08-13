@@ -44,17 +44,55 @@
         .first-item {
             grid-row-start: 1;
             grid-row-end: 7;
-
             @include flex-mode-selection(flex, center, none, row, none);
 
-            p {
-                text-align: center;
+            div{
+                .first-item-h2 {
+                    margin: 15px;
+                    text-align: center;
+                    font-style:normal;
+                    font-size: 20px;
+                    color: nth($colores, 2);
+                }
+                .price-label{
+                    margin-bottom: 15px;
+                    @include flex-mode-selection(flex, center, center, row, none);
+                    label{
+                        font-size: 15px;
+                        
+                    }
+                }
+                .price-range{
+                    @include flex-mode-selection(flex, center, center, row, none);
+                    margin-bottom: 15px;
+                    p{
+                        font-size: 15px;
+                    }
+                    input{
+                        width: 35%;
+                        margin-right: 5px;
+                        margin-left: 5px;
+                    }
+                }
+                .size-label{
+                    @include flex-mode-selection(flex, center, center, row, none);
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    font-size: 15px;
+                }
+                .size-select{
+                    @include flex-mode-selection(flex, center, center, row, none);
+                    margin-bottom: 15px;
+                }
             }
         }
 
         .hero-list {
-            @include flex-mode-selection(flex, center, center, row, none);
+            @include flex-mode-selection(flex, center, center, column, none);
 
+            p{
+                margin: 5px;
+            }
             a {
                 img {
                     max-width: auto;

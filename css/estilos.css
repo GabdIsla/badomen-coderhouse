@@ -331,14 +331,58 @@ header {
       align-items: none;
       flex-direction: row;
       flex-wrap: none; }
-      .collection-hero-products .hero-grid-search-container .first-item p {
-        text-align: center; }
+      .collection-hero-products .hero-grid-search-container .first-item div .first-item-h2 {
+        margin: 15px;
+        text-align: center;
+        font-style: normal;
+        font-size: 20px;
+        color: black; }
+      .collection-hero-products .hero-grid-search-container .first-item div .price-label {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: none; }
+        .collection-hero-products .hero-grid-search-container .first-item div .price-label label {
+          font-size: 15px; }
+      .collection-hero-products .hero-grid-search-container .first-item div .price-range {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: none;
+        margin-bottom: 15px; }
+        .collection-hero-products .hero-grid-search-container .first-item div .price-range p {
+          font-size: 15px; }
+        .collection-hero-products .hero-grid-search-container .first-item div .price-range input {
+          width: 35%;
+          margin-right: 5px;
+          margin-left: 5px; }
+      .collection-hero-products .hero-grid-search-container .first-item div .size-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: none;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 15px; }
+      .collection-hero-products .hero-grid-search-container .first-item div .size-select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: none;
+        margin-bottom: 15px; }
     .collection-hero-products .hero-grid-search-container .hero-list {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: none; }
+      .collection-hero-products .hero-grid-search-container .hero-list p {
+        margin: 5px; }
       .collection-hero-products .hero-grid-search-container .hero-list a img {
         max-width: auto;
         max-height: auto;
